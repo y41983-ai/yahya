@@ -1,0 +1,50 @@
+{
+  "trading_bot": {
+    "name": "Professional Forex Trading Bot",
+    "version": "1.0.0",
+    "language": "Arabic",
+    "pair": "EUR/USD",
+    "platform": "MetaTrader 5",
+    "timeframe": "H1"
+  },
+  "strategy": {
+    "name": "RSI + Moving Averages",
+    "rsi_period": 14,
+    "rsi_buy_level": 30,
+    "rsi_sell_level": 70,
+    "ma_period": 20,
+    "ma_type": "EMA"
+  },
+  "risk_management": {
+    "lot_size": 0.1,
+    "stop_loss_pips": 100,
+    "take_profit_pips": 200,
+    "risk_reward_ratio": 1.0,
+    "max_open_positions": 2,
+    "max_daily_loss": -500,
+    "max_consecutive_losses": 3
+  },
+  "trading_hours": {
+    "enabled": false,
+    "start_hour": "08:00",
+    "end_hour": "17:00",
+    "timezone": "GMT"
+  },
+  "alerts": {
+    "email_alerts": true,
+    "telegram_alerts": false,
+    "push_notifications": true
+  },
+  "backtesting": {
+    "enabled": true,
+    "initial_balance": 10000,
+    "start_date": "2023-01-01",
+    "end_date": "2024-01-01"
+  },
+  "expected_results": {
+    "win_rate": "65-70%",
+    "profit_factor": "1.5-2.0",
+    "annual_return": "20-40%",
+    "max_drawdown": "15%"
+  }
+}
